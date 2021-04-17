@@ -4,7 +4,7 @@
 - Removed cuda support for now
 - Plan to remove more as I go, eventually there will only be 4-5 remaining from the original code
 - Strpped binary comes out as 2.8mb on my system
-- Still early in testing but nicehash data reporting a 6mh/s improvement ( 1x amd 5500xt + 1x nvidia 1060gtx )
+- Still early in testing but nicehash data reporting a 16mh/s improvement ( 1x amd 5500xt + 1x nvidia 1060gtx )
 
 # ethminer
 
