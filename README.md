@@ -6,6 +6,18 @@
 - Strpped binary comes out as 2.8mb on my system
 - Still early in testing but nicehash data reporting a 16mh/s improvement ( 1x amd 5500xt + 1x nvidia 1060gtx )
 
+
+## Install - image28
+<P>
+Linux only maybe MacOS(Unix) - Requires system libs
+libboost, opencl, libjansson, ..?
+
+git clone https://github.com/image28/ethminer.git ethminer-1mg28
+cd ethminer-1mg28
+cd build
+./compile.sh # Cross fingers and hope it works for you
+</P>
+
 # ethminer
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
@@ -38,17 +50,6 @@
 * [Maintainers & Authors](#maintainers--authors)
 * [Contribute](#contribute)
 * [F.A.Q.](#faq)
-
-
-## Install
-
-Linux only maybe MacOS(Unix) - Requires system libs
-libboost, opencl, libjansson, ..?
-
-git clone https://github.com/image28/ethminer.git ethminer-1mg28
-cd ethminer-1mg28
-cd build
-./compile.sh # Cross fingers and hope it works for you
 
 ## Usage
 
