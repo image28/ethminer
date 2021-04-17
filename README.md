@@ -8,15 +8,15 @@
 
 
 ## Install - image28
-<P>
-Linux only maybe MacOS(Unix) - Requires system libs
-libboost, opencl, libjansson, ..?
-
-git clone https://github.com/image28/ethminer.git ethminer-1mg28
-cd ethminer-1mg28
-cd build
-./compile.sh # Cross fingers and hope it works for you
-</P>
+<BR>
+Linux only maybe MacOS(Unix) - Requires system libs<BR>
+libboost, opencl, libjansson, ..?<BR>
+<BR>
+git clone https://github.com/image28/ethminer.git ethminer-1mg28<BR>
+cd ethminer-1mg28<BR>
+cd build<BR>
+./compile.sh # Cross fingers and hope it works for you<BR>
+<BR>
 
 # ethminer
 
