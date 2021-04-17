@@ -3,6 +3,7 @@
 - Changed two lines of code so recent version of boost can be used
 - Removed cuda support for now
 - Plan to remove more as I go, eventually there will only be 4-5 remaining from the original code
+- Strpped binary comes out as 2.8mb on my system
 
 # ethminer
 
