@@ -26,7 +26,7 @@ PROJECT_NAME_VER="$PROJECT_NAME.$PROJECT_VERSION"
 mkdir -p ethminer
 cd $CUR/ethminer
 $CXX -o libethminer-buildinfo.o -I../ethminer -DPROJECT_NAME_VERSION="$PROJECT_NAME_VER" -DPROJECT_NAME="$NAME" -DPROJECT_VERSION=0.19.0 -DCOMMIT="$COMMIT" -DSYSTEM_NAME="$SYSTEM" -DSYSTEM_PROCESSOR="$ARCH" -DCOMPILER_ID="$COMPILER" -DCOMPILER_VERSION="$COMPILER_VERSION" -DBUILD_TYPE="$TYPE" -c $CUR/../ethminer/buildinfo.c 
-#$AR qc libethminer-buildinfo.a libethminer-buildinfo.o
+$AR qc libethminer-buildinfo.a libethminer-buildinfo.o
 
 # DEVICE MANAGER CORE
 mkdir -p $CUR/libdevcore 
