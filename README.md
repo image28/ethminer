@@ -1,9 +1,9 @@
 # ethminer - image28
 - Removed build systems and git submodules
 - Changed two lines of code so recent version of boost can be used
-- Removed cuda support for now
+- Cuda support re-added however current source may have a bug, used compile.sh with different build for todays testing
 - Plan to remove more as I go, eventually there will only be 4-5 remaining from the original code
-- Strpped binary comes out as 2.8mb on my system
+
 - Still early in testing but nicehash data reporting a 16mh/s improvement ( 1x amd 5500xt + 1x nvidia 1060gtx )
 
 
