@@ -1,3 +1,9 @@
+# ethminer - image28
+- Removed build systems and git submodules
+- Changed two lines of code so recent version of boost can be used
+- Removed cuda support for now
+- Plan to remove more as I go, eventually there will only be 4-5 remaining from the original code
+
 # ethminer
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
@@ -34,18 +40,13 @@
 
 ## Install
 
-[![Releases](https://img.shields.io/github/downloads/ethereum-mining/ethminer/total.svg)][Releases]
+Linux only maybe MacOS(Unix) - Requires system libs
+libboost, opencl, libjansson, ..?
 
-Standalone **executables** for *Linux*, *macOS* and *Windows* are provided in
-the [Releases] section.
-Download an archive for your operating system and unpack the content to a place
-accessible from command line. The ethminer is ready to go.
-
-| Builds | Release | Date |
-| ------ | ------- | ---- |
-| Last   | [![GitHub release](https://img.shields.io/github/release/ethereum-mining/ethminer/all.svg)](https://github.com/ethereum-mining/ethminer/releases) | [![GitHub Release Date](https://img.shields.io/github/release-date-pre/ethereum-mining/ethminer.svg)](https://github.com/ethereum-mining/ethminer/releases) |
-| Stable | [![GitHub release](https://img.shields.io/github/release/ethereum-mining/ethminer.svg)](https://github.com/ethereum-mining/ethminer/releases/latest) | [![GitHub Release Date](https://img.shields.io/github/release-date/ethereum-mining/ethminer.svg)](https://github.com/ethereum-mining/ethminer/releases/latest) |
-
+git clone https://github.com/image28/ethminer.git ethminer-1mg28
+cd ethminer-1mg28
+cd build
+./compile.sh # Cross fingers and hope it works for you
 
 ## Usage
 
@@ -61,23 +62,6 @@ ethminer --help
 ### Examples connecting to pools
 
 Check our [samples](docs/POOL_EXAMPLES_ETH.md) to see how to connect to different pools.
-
-## Build
-
-### Continuous Integration and development builds
-
-| CI            | OS            | Status  | Development builds |
-| ------------- | ------------- | -----   | -----------------  |
-| [Travis CI]   | Linux, macOS  | [![Travis CI](https://img.shields.io/travis/ethereum-mining/ethminer/master.svg)][Travis CI]    | ✗ No build artifacts, [Amazon S3 is needed] for this |
-| [AppVeyor]    | Windows       | [![AppVeyor](https://img.shields.io/appveyor/ci/ethereum-mining/ethminer/master.svg)][AppVeyor] | ✓ Build artifacts available for all PRs and branches |
-
-The AppVeyor system automatically builds a Windows .exe for every commit. The latest version is always available [on the landing page](https://ci.appveyor.com/project/ethereum-mining/ethminer) or you can [browse the history](https://ci.appveyor.com/project/ethereum-mining/ethminer/history) to access previous builds.
-
-To download the .exe on a build under `Job name` select the CUDA version you use, choose `Artifacts` then download the zip file.
-
-### Building from source
-
-See [docs/BUILD.md](docs/BUILD.md) for build/compilation details.
 
 ## Maintainers & Authors
 
